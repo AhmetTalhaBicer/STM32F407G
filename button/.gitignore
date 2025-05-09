@@ -1,23 +1,54 @@
-# STM32 specific
+# .gitignore for STM32 projects
+# filepath: c:\Users\athlb\Documents\GitHub\github\STM32F407G\.gitignore
+
+# Build results and intermediate files
+/build/
+/Debug/
+/Release/
+/*/Debug/
+/*/Release/
 *.o
 *.d
-*.lst
-*.map
+*.eep
 *.elf
 *.hex
 *.bin
-*.axf
+*.map
+*.lst
+*.su
 
-# STM32CubeIDE specific
+# STM32CubeMX generated files
+.mxproject
+
+# STM32CubeIDE generated files
 .settings/
-.launch
-Debug/
-Release/
-build/
+.cproject
+.project
+.factorypath
+language.settings.xml
 *.launch
 
-# Keil uVision specific
+# STM CubeIDE project specific settings
+.metadata/
+*.prefs
+RemoteSystemsTempFiles/
+
+# IAR Settings
+*.ewt
+*.ewd
+*.dep
+*.ewp
+*.pbi
+*.pbd
+*.pbw
+*.xcl
+settings/
+*_buildlog.html
+*_log.html
+
+# Keil MDK
 *.uvguix.*
+*.uvopt
 *.uvoptx
 *.uvprojx
 *.scvd
@@ -25,81 +56,49 @@ JLinkLog.txt
 JLinkSettings.ini
 EventRecorderStub.scvd
 RTE/
-DebugConfig/
-MDK-ARM/DebugConfig/
-MDK-ARM/**/
-!MDK-ARM/*.uvprojx
-!MDK-ARM/*.uvoptx
-
-# IAR specific
-*.ewd
-*.ewp
-*.eww
-*.dep
-*.ewt
-*.ewd
-EWARM/Debug/
-EWARM/Release/
-EWARM/settings/
-
-# STM32CubeMX specific
-.mxproject
-Middlewares/
-Drivers/
-Core/Inc/
-Core/Src/
-
-# Generated files
-*.bak
-*.ddk
-*.edk
-*.lst
-*.lnp
-*.mpf
-*.mpj
-*.obj
-*.omf
-*.plg
-*.rpt
-*.tmp
-*.__i
-*.crf
 *.axf
-*.tra
-*.dep
-*.iex
-*.sct
 *.htm
+*.lnp
+*.sct
 
-# Generic
-.vscode/
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
+# Segger Embedded Studio
+*.jlink
+*.emSession
+*.emProject
+Output/
 
-# Eclipse
+# Atollic TrueSTUDIO
+.atollic/
+.settings/
+Debug/
 .metadata/
 RemoteSystemsTempFiles/
+.recommenders/
+.sproject
 
-# IDE specific
-*.iml
-.idea/
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Temporary files
+*.bak
+*~
+*.swp
+*.tmp
+
+# OS specific files
 .DS_Store
 Thumbs.db
+Desktop.ini
+
+# User-specific files
+*.user
+
+# Python
+*.pyc
+__pycache__/
+venv/
+env/
+
+# Logs
+*.log
