@@ -1,0 +1,105 @@
+# STM32 specific
+*.o
+*.d
+*.lst
+*.map
+*.elf
+*.hex
+*.bin
+*.axf
+
+# STM32CubeIDE specific
+.settings/
+.launch
+Debug/
+Release/
+build/
+*.launch
+
+# Keil uVision specific
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+*.scvd
+JLinkLog.txt
+JLinkSettings.ini
+EventRecorderStub.scvd
+RTE/
+DebugConfig/
+MDK-ARM/DebugConfig/
+MDK-ARM/**/
+!MDK-ARM/*.uvprojx
+!MDK-ARM/*.uvoptx
+
+# IAR specific
+*.ewd
+*.ewp
+*.eww
+*.dep
+*.ewt
+*.ewd
+EWARM/Debug/
+EWARM/Release/
+EWARM/settings/
+
+# STM32CubeMX specific
+.mxproject
+Middlewares/
+Drivers/
+Core/Inc/
+Core/Src/
+
+# Generated files
+*.bak
+*.ddk
+*.edk
+*.lst
+*.lnp
+*.mpf
+*.mpj
+*.obj
+*.omf
+*.plg
+*.rpt
+*.tmp
+*.__i
+*.crf
+*.axf
+*.tra
+*.dep
+*.iex
+*.sct
+*.htm
+
+# Generic
+.vscode/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Eclipse
+.metadata/
+RemoteSystemsTempFiles/
+
+# IDE specific
+*.iml
+.idea/
+.DS_Store
+Thumbs.db
