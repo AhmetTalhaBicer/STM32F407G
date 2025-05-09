@@ -15,9 +15,16 @@
 *.map
 *.lst
 *.su
+*.srec
+*.out
+*.dfu
+*.axf
+*.lnp
+*.htm
 
 # STM32CubeMX generated files
 .mxproject
+# *.ioc  # Opsiyonel: Proje konfigürasyonunu hariç tutmak için
 
 # STM32CubeIDE generated files
 .settings/
@@ -26,13 +33,16 @@
 .factorypath
 language.settings.xml
 *.launch
+*.cprof
+*.tprof
+*.trace
 
-# STM CubeIDE project specific settings
+# STM32CubeIDE project-specific settings
 .metadata/
 *.prefs
 RemoteSystemsTempFiles/
 
-# IAR Settings
+# IAR Embedded Workbench
 *.ewt
 *.ewd
 *.dep
@@ -45,7 +55,7 @@ settings/
 *_buildlog.html
 *_log.html
 
-# Keil MDK
+# Keil MDK (uVision)
 *.uvguix.*
 *.uvopt
 *.uvoptx
@@ -55,9 +65,6 @@ JLinkLog.txt
 JLinkSettings.ini
 EventRecorderStub.scvd
 RTE/
-*.axf
-*.htm
-*.lnp
 *.sct
 
 # Segger Embedded Studio
@@ -79,13 +86,35 @@ RemoteSystemsTempFiles/
 .vscode/
 *.code-workspace
 
+# CMake and Make
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Doxygen and documentation
+doc/
+docs/
+html/
+latex/
+
+# Test and coverage files
+test/
+tests/
+*.gcda
+*.gcno
+
 # Temporary files
 *.bak
 *~
 *.swp
 *.tmp
+*.cache
+*.temp
+*.lock
 
-# OS specific files
+# OS-specific files
 .DS_Store
 Thumbs.db
 Desktop.ini
@@ -101,3 +130,11 @@ env/
 
 # Logs
 *.log
+
+# Docker and CI/CD
+.docker/
+.github/workflows/*.cache
+
+# Additional IDE settings
+.eclipse/
+.idea/
