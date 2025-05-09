@@ -1,5 +1,4 @@
 # .gitignore for STM32 projects
-# filepath: c:\Users\athlb\Documents\GitHub\github\STM32F407G\.gitignore
 
 # Build results and intermediate files
 /build/
